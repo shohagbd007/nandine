@@ -1,0 +1,816 @@
+/* Common CSS Starts Here */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a:hover { text-decoration: none }
+a:focus { outline: 0 solid; text-decoration: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p:last-child {
+    margin-bottom: 0
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+
+}
+.btn{
+    margin: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #ff0000;
+    padding: 8px 36px;
+    border-radius: 0;
+    margin-top: 25px;
+    transition: .5s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #34495e;
+}
+.redtext {
+    color: #ff0000;
+}
+.section-title {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.section-title h2 {
+    font-weight: 500;
+    font-size: 38px;
+    color: #000;
+    position: relative;
+    padding-bottom: 30px;
+}
+.section-title h2:before {
+    position: absolute;
+    content: "";
+    background: #ff0000;
+    height: 3px;
+    width: 80%;
+    left: 10%;
+    bottom: 8px;
+    z-index: 0;
+}
+.section-title h2:after {
+    position: absolute;
+    content: "";
+    background: #ff0000;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    bottom: 0;
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+}
+.section-padding {
+    padding: 90px 0;
+}
+p{
+    font-size: 14px;
+}
+/* ==========================================================
+================ Header Area CSS Starts Here ================
+========================================================== */
+header{
+    position: relative;
+    background: #aeaeac url("../img/header-bg.jpg");
+    background-size: cover;
+    z-index: 9;
+}
+header:after{
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.3);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.header-top {
+    position: relative;
+    background: rgba(52,73,94,0.5);
+    width: 100%;
+    z-index: 9 !important;
+}
+.sticky-nav{
+    position: fixed;
+    background: #34495e;
+    z-index: 9 !important;
+}
+.menubar {
+    width: 100%;
+}
+.logo {}
+.logo img {
+    display: block;
+}
+.menubar{
+}
+.menubar .navbar{
+    padding: 0;
+}
+.menubar .navbar-brand{
+    padding: 0;
+    margin: 0;
+}
+.navbar-dark .navbar-toggler {
+    border: 1px solid #fff;
+}
+.navbar-toggle-icon {
+    background: #fff;
+    height: 3px;
+    width: 30px;
+    display: block;
+    margin: 5px 0 5px;    
+}
+.main-menu{}
+.main-menu .nav-link.active {
+    color: #ff0000 !important;
+}
+.main-menu ul li.nav-item a:hover{
+    color: #ff0000 !important;
+}
+.main-menu ul li{
+    display: inline-block;
+}
+.main-menu ul li.nav-item a.nav-link {
+    padding: 26px 12px !important;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Slider Area CSS Here */
+.header-slider{
+    position: relative;
+}
+.slider-text {
+    text-align: center;
+    padding: 200px 0px;
+    color: #fff;
+    width: 100%;
+    display: block;
+}
+.slider-text h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.slider-text h1 span{
+    font-size: 55px;
+}
+.slider-text span.redtext{
+    font-size: 40px;
+}
+.slider-text p {
+    line-height: 24px;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+.slider-btn {
+    margin: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #ff0000;
+    padding: 8px 36px;
+    border-radius: 0;
+    margin-top: 25px;
+}
+/* =========================================================
+================ About Area CSS Starts Here ================
+========================================================= */
+.about-area{}
+.about-img{
+    background-color: #534741;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.aboutimg-full-overlay{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.25);
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;    
+}
+.about-img:hover .aboutimg-full-overlay{
+    top: 0;
+    transition: all .5s ease;
+}
+.about-img img{
+    display: block;
+}
+.aboutimg-overlay {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fefefe;
+    padding: 10px;
+    background-color: rgba(38,16,15,0.75);
+    cursor: pointer;
+    transition: all .3s ease;    
+}
+.aboutimg-overlay .overlay-heading{}
+.aboutimg-overlay .overlay-heading h4{}
+
+.aboutimg-overlay .overlay-social a {
+    color: #fff;
+    background: #ff0000;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 0 3px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+.aboutimg-overlay .overlay-social a:hover{
+    color: #ff0000;
+    background-color: #fff;
+}
+.about-text{
+    color: #2d2d2d;
+}
+.about-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.about-text p {
+    line-height: 26px;
+    margin-top: 30px;
+}
+.about-btn{}
+/* About Video Area CSS */
+.about-video-area{
+    background: url("../img/about video.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.about-video-area:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+.about-video-text{
+    color: #fff;
+    text-align: center;
+}
+.about-video-text h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.about-video-btn {
+    background: transparent;
+    font-size: 36px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 16px 30px;
+}
+.about-video-btn:hover{
+    background: #ff0000;
+}
+/* ==========================================================
+=============== Services Area CSS Starts Here ===============
+========================================================== */
+.services-area{}
+.single-service-item {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid #d9d9d9;
+    padding: 15px;
+}
+.single-service-item i.fa {
+    font-size: 38px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+.single-service-item h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.single-service-item p {
+    line-height: 24px;
+}
+/* ===========================================================
+================= Skill Area CSS Starts Here =================
+=========================================================== */
+.skill-area{
+    background-color: #f2f2f2;
+}
+.skill-left-content,
+.skill-right-content{
+    color: #2d2d2d;
+}
+.skill-left-content h4,
+.skill-right-content h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.skill-right-content h4{
+    margin-bottom: 5px;
+}
+.skill-left-content p,
+.skill-right-content p{
+    font-weight: 300;
+}
+.skill-left-content p {
+    line-height: 26px;
+    margin-top: 26px;
+}
+.skill-progressbar{}
+.single-progressbar {
+    margin-bottom: 13px;
+}
+.progress-title {
+    text-transform: uppercase;
+    color: #2d2d2d;
+    font-weight: 300;
+}
+.progress {
+    background-color: #000000;
+    border-radius: 20px;
+    position: relative;
+}
+.progress-bar {
+    background-color: #ff0000;
+    border-radius: 20px;
+    top: 50%;
+    position: relative;
+    height: 7px;
+    transform: translate(0, -50%);
+    left: 1%;
+    animation: skillbaranimation 2s linear;
+}
+@keyframes skillbaranimation{
+    0%{
+        width: 0%;
+    }
+}
+.progress .progress-text {
+    position: absolute;
+    content: "";
+    right: 1%;
+    top: 0;
+    color: #fff;
+    font-size: 12px;
+}
+/* ==========================================================
+============ Client Counter Area CSS Starts Here ============
+========================================================== */
+.client-counter-area{
+    background: url("../img/client-counter-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 0;
+}
+.client-counter-area:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+.single-client-counter{
+    color: #fff;
+    text-align: center;
+}
+.single-client-counter i.fa {
+    font-size: 22px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 15px 12px;
+    margin-bottom: 16px;
+    width: 50px;
+    height: 50px;
+    /* line-height: 20px; */
+}
+.single-client-counter h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.single-client-counter p{}
+/* ===========================================================
+=============== Portfolio Area CSS Starts Here ===============
+=========================================================== */
+.portfolio-area{}
+.portfolio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.portfolio-buttons button {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #0f0f00;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.portfolio-buttons button:hover{
+    color: #ff0000;
+}
+.portfolio-buttons .mixitup-control-active{
+    color: #ff0000;
+}
+.portfolio-contents{}
+.single-portfolio-item{
+    margin-bottom: 30px;
+    position: relative;
+}
+.single-portfolio-item img{
+    display: block;
+    max-width: 100%;
+}
+.single-portfolio-item:hover .portfolio-overlay{
+    transform: scale(1);
+    transition: all .5s ease;
+}
+.portfolio-overlay{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(231,76,60,0.5);
+    transform: scale(0);
+    transition: all .5s ease;
+}
+.portfolio-overlay a{
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio-button {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+}
+/* ==========================================================
+================= Team Area CSS Starts Here =================
+========================================================== */
+.team-area{
+    background-color: #f2f2f2;
+}
+.single-team-item {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    margin: 0px 10px;
+}
+.single-team-item img{
+    display: block;
+}
+.team-full-overlay{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 98%;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.9);
+    z-index: 0;
+    transition: all .5s ease;
+}
+.teamimg-overlay {
+    background-color: rgba(52,73,94,0.9);
+    color: #fff;
+    padding: 7px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    opacity: 0;
+    transition: all .5s ease;
+}
+.single-team-item:hover .teamimg-overlay{
+    opacity: 1;
+    transition: all .5s ease;
+}
+.single-team-item:hover .team-full-overlay{
+    top: 0;
+    background-color: rgba(255,0,0,0.3);
+    transition: all .5s ease;
+}
+.teamimg-overlay-heading h4{
+    margin: 0;
+}
+.team-overlay-social a {
+    color: #fff;
+    padding: 5px 10px 0;
+    display: inline-block;
+    font-size: 18px;
+}
+.team-overlay-social a:hover {
+    color: #E74C3C;
+}
+.owl-carousel{
+    z-index: 0 !important;
+}
+/* ===========================================================
+============== Testimonial Area CSS Starts Here ==============
+=========================================================== */
+.testimonial-area{
+    padding: 80px 0;
+    background: url("../img/testimonial-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.testimonial-area:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+.testimonial-carousel{
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.single-testimonial-item{
+    flex: 0 0 60% !important;
+}
+.single-testimonial-item img {
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.single-testimonial-item h4{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+    text-transform: uppercase;
+}
+.single-testimonial-item p{
+    font-weight: 300;
+    color: #dadada;
+    line-height: 24px;
+}
+.testimonial-carousel .owl-item img {
+    display: inline-block;
+    max-width: 100%;
+    width: 120px;
+}
+.single-testimonial-content{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* ==========================================================
+================= Blog Area CSS Starts Here =================
+========================================================== */
+.blog-area{}
+.single-blog-item {
+    box-shadow: 0 0 15px #d9d9d9;
+    font-size: 14px;
+}
+.single-blog-item img {
+    border-bottom: 6px solid #ff0000;
+}
+.single-blog-text {
+    padding: 12px;
+}
+.single-blog-text h4 {
+    margin: 10px 0;
+}
+.single-blog-text h4 a {
+    color: #666666;
+    font-size: 24px;
+    font-weight: 500;
+}
+.single-blog-text h4 a:hover{
+    color: #ff0000;
+}
+.single-blog-text .blog-date {
+    color: #191212;
+    font-weight: 300;
+    margin: 0 0 5px;
+    padding: 0;
+    display: inline-block;
+}
+.single-blog-text p {
+    color: #191212;
+    font-weight: 300;
+    margin: 15px 0 0;
+    line-height: 24px;
+}
+.single-blog-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0;
+}
+.single-blog-item .blog-btn {
+    font-size: 16px;
+    background: #000000;
+    padding: 6px 24px;
+    margin: 0;
+}
+.single-blog-item .blog-btn:hover{
+    background: #ff0000;
+}
+.blog-comment-counter {
+    color: #747474;
+    font-weight: 300;
+}
+.blog-comment-counter:hover{
+    color: #ff0000;
+}
+/* ===========================================================
+================ Contact Area CSS Starts Here ================
+=========================================================== */
+.contact-area{
+    background: url("../img/contact-bg.jpg") rgb(0,0,0);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.contact-area:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+.contact-title h2{
+    color: #fff;
+}
+.contact-form{}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #fff;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 5px #fff;
+}
+.contact-btn {
+    margin: 0;
+    padding: 8px 26px;
+}
+/* ==========================================================
+================ Footer Area CSS Starts Here ================
+========================================================== */
+.footer-area{
+    background-color: #1a1a1a;
+    padding: 20px 0;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-left-social{
+    flex: 0 0 50%;
+}
+.footer-left-social ul{}
+.footer-left-social ul li {
+    display: inline-block;
+}
+.footer-left-social ul li a {
+    color: #fff;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 18px;
+}
+.footer-left-social ul li a:hover{
+    color: #ff0000;
+}
+.footer-right-copyright{
+    flex: 0 0 50%;
+}
+.footer-right-copyright p{
+    color: #fff;
+    font-weight: 300;
+}
+/* Scroll To Top Area CSS Here */
+.scrolltopsec {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #34495e;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    z-index: 99;
+    opacity: 0;
+}
+.scrolltop{
+    color: #fff;
+    font-size: 40px;    
+}
+.scrolltopsec:hover{
+    background: #ff0000;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.scrolltopsec:hover .scrolltop{
+    color: #fff;
+}
